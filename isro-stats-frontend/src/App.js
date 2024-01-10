@@ -24,8 +24,8 @@ function App() {
     <div>
       <h1>ISRO Launches</h1>
       <ul>
-        {launches.map((launch, index) => (
-          <li key={index}>{launch.name}</li>
+        {launches.map((launch) => (
+          <li key={launch.UUID}>{launch.Name}</li>
         ))}
       </ul>
     </div>
