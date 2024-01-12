@@ -1,6 +1,7 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Favorite from './Favorite';
 
 function App() {
   const [launches, setLaunches] = useState([]);
@@ -28,6 +29,7 @@ function App() {
           <li key={launch.UUID}>{launch.Name}</li>
         ))}
       </ul>
+      <Favorite />
     </div>
   );
 }
